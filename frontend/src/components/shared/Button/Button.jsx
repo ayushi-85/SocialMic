@@ -1,0 +1,16 @@
+import React from 'react';
+import styles from './Button.module.css';
+
+const Button = ({ text, onClick }) => {
+return (
+    <button className={styles.button} onClick={onClick}>
+    <span>{text}</span>
+    <img 
+        className={styles.arrow} 
+        src="/images/arrowFwd.png" 
+        alt="arrow" />
+    </button>
+);
+};
+
+export default Button;
